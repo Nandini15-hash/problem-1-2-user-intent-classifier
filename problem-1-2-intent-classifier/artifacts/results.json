@@ -1,0 +1,658 @@
+{
+  "n_videomme": 270,
+  "n_videos": 90,
+  "n_realworld": 100,
+  "n_synthetic": 450,
+  "label_dist_videomme": {
+    "frame": 66,
+    "clip": 110,
+    "whole_video": 94
+  },
+  "label_dist_realworld": {
+    "frame": 30,
+    "clip": 30,
+    "whole_video": 40
+  },
+  "configs": {
+    "T0 rules": {
+      "model": "rules",
+      "synthetic": false,
+      "videomme_cv_mean": {
+        "accuracy": 0.6925925925925925,
+        "macro_f1": 0.6846542114103964,
+        "ece": 0.04477700859773638,
+        "f1_frame": 0.631578947368421,
+        "f1_clip": 0.7018867924528301,
+        "f1_whole_video": 0.7204968944099379,
+        "lenient_accuracy": 0.7703703703703704,
+        "argmax_routing_regret": 0.11779629629629632,
+        "argmax_answerability": 0.8737037037037039,
+        "argmax_rel_cost_vs_oracle": 0.8854790419161678,
+        "argmax_catastrophic_rate": 0.011111111111111112,
+        "argmax_under_route_rate": 0.16666666666666666,
+        "argmax_over_route_rate": 0.14074074074074075,
+        "bayes_routing_regret": 0.10812962962962964,
+        "bayes_answerability": 0.8881481481481484,
+        "bayes_rel_cost_vs_oracle": 0.9498502994011975,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.13333333333333333,
+        "bayes_over_route_rate": 0.23703703703703702
+      },
+      "videomme_cv_std": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "ece": 0.004546741369033818,
+        "f1_frame": 0.0,
+        "f1_clip": 0.0,
+        "f1_whole_video": 0.0,
+        "lenient_accuracy": 0.0,
+        "argmax_routing_regret": 1.3877787807814457e-17,
+        "argmax_answerability": 0.0,
+        "argmax_rel_cost_vs_oracle": 1.1102230246251565e-16,
+        "argmax_catastrophic_rate": 0.0,
+        "argmax_under_route_rate": 0.0,
+        "argmax_over_route_rate": 0.0,
+        "bayes_routing_regret": 1.3877787807814457e-17,
+        "bayes_answerability": 1.1102230246251565e-16,
+        "bayes_rel_cost_vs_oracle": 1.1102230246251565e-16,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.0,
+        "bayes_over_route_rate": 2.7755575615628914e-17
+      },
+      "videomme_ci95": {
+        "macro_f1": [
+          0.6293015543718654,
+          0.7398051335686195
+        ],
+        "bayes_routing_regret": [
+          0.08832685185185185,
+          0.12781296296296296
+        ]
+      },
+      "realworld": {
+        "accuracy": 0.84,
+        "macro_f1": 0.8471620227038184,
+        "ece": 0.08361554610486785,
+        "f1_frame": 0.9473684210526315,
+        "f1_clip": 0.8,
+        "f1_whole_video": 0.7941176470588235,
+        "argmax_routing_regret": 0.07279999999999999,
+        "argmax_answerability": 0.9155,
+        "argmax_rel_cost_vs_oracle": 0.85,
+        "argmax_catastrophic_rate": 0.0,
+        "argmax_under_route_rate": 0.13,
+        "argmax_over_route_rate": 0.03,
+        "bayes_routing_regret": 0.07955,
+        "bayes_answerability": 0.9125000000000001,
+        "bayes_rel_cost_vs_oracle": 0.8980769230769231,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.12,
+        "bayes_over_route_rate": 0.12
+      },
+      "temperature": 0.9,
+      "perf": {
+        "p50_ms": 0.06106650005222036,
+        "p95_ms": 0.11872170005062799,
+        "batch_qps": 23099.535389829558,
+        "size_kb": 0.0556640625
+      }
+    },
+    "T1 cue-LR": {
+      "model": "cue_lr",
+      "synthetic": false,
+      "videomme_cv_mean": {
+        "accuracy": 0.7325925925925926,
+        "macro_f1": 0.7263825814402416,
+        "ece": 0.07165079345384082,
+        "f1_frame": 0.6696734365681948,
+        "f1_clip": 0.7213735862857897,
+        "f1_whole_video": 0.7881007214667402,
+        "lenient_accuracy": 0.8214814814814815,
+        "argmax_routing_regret": 0.12344074074074074,
+        "argmax_answerability": 0.8785925925925927,
+        "argmax_rel_cost_vs_oracle": 1.0273952095808383,
+        "argmax_catastrophic_rate": 0.01925925925925926,
+        "argmax_under_route_rate": 0.1288888888888889,
+        "argmax_over_route_rate": 0.1385185185185185,
+        "bayes_routing_regret": 0.1030888888888889,
+        "bayes_answerability": 0.897,
+        "bayes_rel_cost_vs_oracle": 1.0011976047904194,
+        "bayes_catastrophic_rate": 0.006666666666666666,
+        "bayes_under_route_rate": 0.1096296296296296,
+        "bayes_over_route_rate": 0.22148148148148147
+      },
+      "videomme_cv_std": {
+        "accuracy": 0.009771041450572528,
+        "macro_f1": 0.009079935898721456,
+        "ece": 0.008135202586005414,
+        "f1_frame": 0.010289214470198309,
+        "f1_clip": 0.014742987699163821,
+        "f1_whole_video": 0.013139327113673773,
+        "lenient_accuracy": 0.00919235084888212,
+        "argmax_routing_regret": 0.003971182200031079,
+        "argmax_answerability": 0.0035843739516844917,
+        "argmax_rel_cost_vs_oracle": 0.01538788176557945,
+        "argmax_catastrophic_rate": 0.002771598064276994,
+        "argmax_under_route_rate": 0.005443310539518178,
+        "argmax_over_route_rate": 0.010631629699560979,
+        "bayes_routing_regret": 0.0037688602083697947,
+        "bayes_answerability": 0.004179445424976476,
+        "bayes_rel_cost_vs_oracle": 0.015108640008431306,
+        "bayes_catastrophic_rate": 0.0014814814814814814,
+        "bayes_under_route_rate": 0.006869347033700521,
+        "bayes_over_route_rate": 0.00718174793691308
+      },
+      "videomme_ci95": {
+        "macro_f1": [
+          0.6564995180692327,
+          0.7586038962834063
+        ],
+        "bayes_routing_regret": [
+          0.07957222222222222,
+          0.13028703703703703
+        ]
+      },
+      "realworld": {
+        "accuracy": 0.72,
+        "macro_f1": 0.6938895276420428,
+        "ece": 0.12304031133651733,
+        "f1_frame": 0.676056338028169,
+        "f1_clip": 0.5306122448979592,
+        "f1_whole_video": 0.875,
+        "argmax_routing_regret": 0.1487,
+        "argmax_answerability": 0.848,
+        "argmax_rel_cost_vs_oracle": 0.9576923076923077,
+        "argmax_catastrophic_rate": 0.03,
+        "argmax_under_route_rate": 0.19,
+        "argmax_over_route_rate": 0.09,
+        "bayes_routing_regret": 0.1254,
+        "bayes_answerability": 0.8695,
+        "bayes_rel_cost_vs_oracle": 0.9346153846153846,
+        "bayes_catastrophic_rate": 0.01,
+        "bayes_under_route_rate": 0.17,
+        "bayes_over_route_rate": 0.14
+      },
+      "temperature": 1.5,
+      "perf": {
+        "p50_ms": 0.25619800010190374,
+        "p95_ms": 0.32107249996897735,
+        "batch_qps": 20359.025303494698,
+        "size_kb": 2.2734375
+      }
+    },
+    "T1 cue-LR +synth": {
+      "model": "cue_lr",
+      "synthetic": true,
+      "videomme_cv_mean": {
+        "accuracy": 0.7170370370370369,
+        "macro_f1": 0.7066864943935218,
+        "ece": 0.05576870388942791,
+        "f1_frame": 0.631513992392101,
+        "f1_clip": 0.7193250575063062,
+        "f1_whole_video": 0.7692204332821582,
+        "lenient_accuracy": 0.7948148148148149,
+        "argmax_routing_regret": 0.12386296296296292,
+        "argmax_answerability": 0.8779259259259259,
+        "argmax_rel_cost_vs_oracle": 1.0241017964071857,
+        "argmax_catastrophic_rate": 0.011851851851851853,
+        "argmax_under_route_rate": 0.1311111111111111,
+        "argmax_over_route_rate": 0.15185185185185185,
+        "bayes_routing_regret": 0.10557407407407407,
+        "bayes_answerability": 0.8953703703703704,
+        "bayes_rel_cost_vs_oracle": 1.0127245508982037,
+        "bayes_catastrophic_rate": 0.0037037037037037034,
+        "bayes_under_route_rate": 0.10888888888888888,
+        "bayes_over_route_rate": 0.22444444444444445
+      },
+      "videomme_cv_std": {
+        "accuracy": 0.007626392697027414,
+        "macro_f1": 0.008586680510790291,
+        "ece": 0.012612577291200631,
+        "f1_frame": 0.016081854426581433,
+        "f1_clip": 0.006327589950064854,
+        "f1_whole_video": 0.010425730645113082,
+        "lenient_accuracy": 0.009543776834611214,
+        "argmax_routing_regret": 0.0029430022090959243,
+        "argmax_answerability": 0.002942988225973212,
+        "argmax_rel_cost_vs_oracle": 0.0012877732435692417,
+        "argmax_catastrophic_rate": 0.0014814814814814814,
+        "argmax_under_route_rate": 0.002962962962962967,
+        "argmax_over_route_rate": 0.005237828008789249,
+        "bayes_routing_regret": 0.0033435030051846898,
+        "bayes_answerability": 0.003233059680414103,
+        "bayes_rel_cost_vs_oracle": 0.007850365630016088,
+        "bayes_catastrophic_rate": 4.336808689942018e-19,
+        "bayes_under_route_rate": 0.0037770514915502103,
+        "bayes_over_route_rate": 0.004444444444444444
+      },
+      "videomme_ci95": {
+        "macro_f1": [
+          0.6473726157544285,
+          0.746854491770621
+        ],
+        "bayes_routing_regret": [
+          0.07773611111111112,
+          0.12335416666666667
+        ]
+      },
+      "realworld": {
+        "accuracy": 0.9,
+        "macro_f1": 0.902941843445276,
+        "ece": 0.09341072469949722,
+        "f1_frame": 0.9473684210526315,
+        "f1_clip": 0.8695652173913043,
+        "f1_whole_video": 0.8918918918918919,
+        "argmax_routing_regret": 0.0431,
+        "argmax_answerability": 0.9514999999999999,
+        "argmax_rel_cost_vs_oracle": 0.9307692307692308,
+        "argmax_catastrophic_rate": 0.0,
+        "argmax_under_route_rate": 0.07,
+        "argmax_over_route_rate": 0.03,
+        "bayes_routing_regret": 0.0548,
+        "bayes_answerability": 0.9425000000000001,
+        "bayes_rel_cost_vs_oracle": 0.9653846153846154,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.07,
+        "bayes_over_route_rate": 0.12
+      },
+      "temperature": 2.0,
+      "perf": {
+        "p50_ms": 0.2517714999612508,
+        "p95_ms": 0.3014755500657884,
+        "batch_qps": 23706.390006502694,
+        "size_kb": 2.2734375
+      }
+    },
+    "T2 tfidf+cue-LR": {
+      "model": "tfidf_cue_lr",
+      "synthetic": false,
+      "videomme_cv_mean": {
+        "accuracy": 0.7414814814814814,
+        "macro_f1": 0.7337887660741832,
+        "ece": 0.07125430228379004,
+        "f1_frame": 0.6684055656497907,
+        "f1_clip": 0.742503157142306,
+        "f1_whole_video": 0.7904575754304528,
+        "lenient_accuracy": 0.8222222222222223,
+        "argmax_routing_regret": 0.11981481481481482,
+        "argmax_answerability": 0.881962962962963,
+        "argmax_rel_cost_vs_oracle": 1.0239520958083834,
+        "argmax_catastrophic_rate": 0.028148148148148144,
+        "argmax_under_route_rate": 0.12074074074074073,
+        "argmax_over_route_rate": 0.13777777777777775,
+        "bayes_routing_regret": 0.10052592592592594,
+        "bayes_answerability": 0.9022962962962964,
+        "bayes_rel_cost_vs_oracle": 1.0380239520958086,
+        "bayes_catastrophic_rate": 0.006666666666666665,
+        "bayes_under_route_rate": 0.09407407407407409,
+        "bayes_over_route_rate": 0.22592592592592595
+      },
+      "videomme_cv_std": {
+        "accuracy": 0.006789001029564198,
+        "macro_f1": 0.008217442540412,
+        "ece": 0.011643055514020974,
+        "f1_frame": 0.019202467342544716,
+        "f1_clip": 0.007645651481850564,
+        "f1_whole_video": 0.012461156296390788,
+        "lenient_accuracy": 0.00936971158568409,
+        "argmax_routing_regret": 0.003487288301562799,
+        "argmax_answerability": 0.0034952446629344536,
+        "argmax_rel_cost_vs_oracle": 0.009643786472099642,
+        "argmax_catastrophic_rate": 0.006017806225656267,
+        "argmax_under_route_rate": 0.002962962962962956,
+        "argmax_over_route_rate": 0.007554102983100425,
+        "bayes_routing_regret": 0.0032175913935516,
+        "bayes_answerability": 0.002792798892075409,
+        "bayes_rel_cost_vs_oracle": 0.016530905105958896,
+        "bayes_catastrophic_rate": 0.0027715980642769936,
+        "bayes_under_route_rate": 0.0037770514915502124,
+        "bayes_over_route_rate": 0.010475656017578487
+      },
+      "videomme_ci95": {
+        "macro_f1": [
+          0.662130532649214,
+          0.76848953290584
+        ],
+        "bayes_routing_regret": [
+          0.08053611111111111,
+          0.12887129629629632
+        ]
+      },
+      "realworld": {
+        "accuracy": 0.75,
+        "macro_f1": 0.737136722643969,
+        "ece": 0.10673049054170605,
+        "f1_frame": 0.7246376811594203,
+        "f1_clip": 0.6296296296296297,
+        "f1_whole_video": 0.8571428571428571,
+        "argmax_routing_regret": 0.13465,
+        "argmax_answerability": 0.8594999999999999,
+        "argmax_rel_cost_vs_oracle": 0.925,
+        "argmax_catastrophic_rate": 0.03,
+        "argmax_under_route_rate": 0.18,
+        "argmax_over_route_rate": 0.07,
+        "bayes_routing_regret": 0.10189999999999999,
+        "bayes_answerability": 0.8960000000000001,
+        "bayes_rel_cost_vs_oracle": 0.9730769230769231,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.13,
+        "bayes_over_route_rate": 0.14
+      },
+      "temperature": 2.0,
+      "perf": {
+        "p50_ms": 1.2689055000691951,
+        "p95_ms": 1.82812584992007,
+        "batch_qps": 8651.584575564346,
+        "size_kb": 369.111328125
+      }
+    },
+    "T2 tfidf+cue-LR +synth": {
+      "model": "tfidf_cue_lr",
+      "synthetic": true,
+      "videomme_cv_mean": {
+        "accuracy": 0.7325925925925925,
+        "macro_f1": 0.7229704228386094,
+        "ece": 0.0414964294124369,
+        "f1_frame": 0.6444237966189186,
+        "f1_clip": 0.724861796884636,
+        "f1_whole_video": 0.7996256750122729,
+        "lenient_accuracy": 0.8111111111111111,
+        "argmax_routing_regret": 0.11894814814814814,
+        "argmax_answerability": 0.8836296296296297,
+        "argmax_rel_cost_vs_oracle": 1.0347305389221557,
+        "argmax_catastrophic_rate": 0.017777777777777778,
+        "argmax_under_route_rate": 0.12148148148148148,
+        "argmax_over_route_rate": 0.14592592592592593,
+        "bayes_routing_regret": 0.09353703703703703,
+        "bayes_answerability": 0.9106296296296297,
+        "bayes_rel_cost_vs_oracle": 1.0561377245508983,
+        "bayes_catastrophic_rate": 0.004444444444444444,
+        "bayes_under_route_rate": 0.08148148148148149,
+        "bayes_over_route_rate": 0.22370370370370368
+      },
+      "videomme_cv_std": {
+        "accuracy": 0.007908946853356509,
+        "macro_f1": 0.009114781852656515,
+        "ece": 0.013679941385039024,
+        "f1_frame": 0.016643626727364042,
+        "f1_clip": 0.010280652152862862,
+        "f1_whole_video": 0.011624525037753816,
+        "lenient_accuracy": 0.005237828008789233,
+        "argmax_routing_regret": 0.002793054289371131,
+        "argmax_answerability": 0.003247030932489464,
+        "argmax_rel_cost_vs_oracle": 0.013569184663023506,
+        "argmax_catastrophic_rate": 0.003628873693012116,
+        "argmax_under_route_rate": 0.005443310539518169,
+        "argmax_over_route_rate": 0.011379475182027572,
+        "bayes_routing_regret": 0.0024799331819840703,
+        "bayes_answerability": 0.0016588293093747195,
+        "bayes_rel_cost_vs_oracle": 0.012398969605298562,
+        "bayes_catastrophic_rate": 0.0014814814814814818,
+        "bayes_under_route_rate": 0.0023424278964210205,
+        "bayes_over_route_rate": 0.0018144368465060606
+      },
+      "videomme_ci95": {
+        "macro_f1": [
+          0.672604056665526,
+          0.7722200664229117
+        ],
+        "bayes_routing_regret": [
+          0.0694212962962963,
+          0.11337407407407407
+        ]
+      },
+      "realworld": {
+        "accuracy": 0.92,
+        "macro_f1": 0.9225687653685596,
+        "ece": 0.0894862194713644,
+        "f1_frame": 0.9655172413793104,
+        "f1_clip": 0.8955223880597015,
+        "f1_whole_video": 0.9066666666666666,
+        "argmax_routing_regret": 0.036849999999999994,
+        "argmax_answerability": 0.9585000000000001,
+        "argmax_rel_cost_vs_oracle": 0.9403846153846154,
+        "argmax_catastrophic_rate": 0.0,
+        "argmax_under_route_rate": 0.06,
+        "argmax_over_route_rate": 0.02,
+        "bayes_routing_regret": 0.0509,
+        "bayes_answerability": 0.9455,
+        "bayes_rel_cost_vs_oracle": 0.9538461538461539,
+        "bayes_catastrophic_rate": 0.0,
+        "bayes_under_route_rate": 0.07,
+        "bayes_over_route_rate": 0.09
+      },
+      "temperature": 2.2,
+      "perf": {
+        "p50_ms": 1.2018009999792412,
+        "p95_ms": 1.3796953498854236,
+        "batch_qps": 9162.106319869314,
+        "size_kb": 483.4541015625
+      }
+    }
+  },
+  "label_sanity": {
+    "agreement_with_tasktype_prior": 0.6518518518518519,
+    "cohen_kappa_with_tasktype_prior": 0.4762690879075526,
+    "ambiguous_items_with_alt_label": 48
+  },
+  "compiled_production_perf": {
+    "p50_ms": 0.1523355000472293,
+    "p95_ms": 0.26465265005981564,
+    "batch_qps": 7341.36813039386,
+    "size_kb": 135.796875
+  },
+  "mu_sensitivity": [
+    {
+      "mu": 0.0,
+      "argmax_regret": 0.11055555555555555,
+      "bayes_regret": 0.0859259259259259,
+      "bayes_answerability": 0.9140740740740741,
+      "bayes_rel_cost": 1.1467065868263473
+    },
+    {
+      "mu": 0.1,
+      "argmax_regret": 0.11255555555555556,
+      "bayes_regret": 0.09040740740740742,
+      "bayes_answerability": 0.9133333333333334,
+      "bayes_rel_cost": 1.0755988023952097
+    },
+    {
+      "mu": 0.15,
+      "argmax_regret": 0.11355555555555556,
+      "bayes_regret": 0.09077777777777778,
+      "bayes_answerability": 0.9127777777777779,
+      "bayes_rel_cost": 1.0479041916167664
+    },
+    {
+      "mu": 0.25,
+      "argmax_regret": 0.11555555555555556,
+      "bayes_regret": 0.09694444444444443,
+      "bayes_answerability": 0.9022222222222221,
+      "bayes_rel_cost": 0.9932634730538922
+    },
+    {
+      "mu": 0.4,
+      "argmax_regret": 0.11855555555555555,
+      "bayes_regret": 0.09548148148148147,
+      "bayes_answerability": 0.8914814814814817,
+      "bayes_rel_cost": 0.9341317365269461
+    }
+  ],
+  "confusion_videomme_prod": [
+    [
+      40,
+      19,
+      7
+    ],
+    [
+      16,
+      80,
+      14
+    ],
+    [
+      4,
+      11,
+      79
+    ]
+  ],
+  "errors_videomme_prod": [
+    {
+      "q": "Which object is depicted as a small flying black dot at the start of the video?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.55
+    },
+    {
+      "q": "What do the scenes shot on Indus River and Yangze River have in common?",
+      "gold": "clip",
+      "pred": "frame",
+      "p": 0.91
+    },
+    {
+      "q": "In which river's bank is it possible to see snow?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.55
+    },
+    {
+      "q": "Based on the information provided by the video, what is the reason for the phenomenon that the atmospheric temperature in some places is low",
+      "gold": "clip",
+      "pred": "frame",
+      "p": 0.57
+    },
+    {
+      "q": "What does the man use to clean the keyboard in this video?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.49
+    },
+    {
+      "q": "What animal saves the monkey in the video?",
+      "gold": "clip",
+      "pred": "frame",
+      "p": 0.5
+    },
+    {
+      "q": "What is the man in the video eating?",
+      "gold": "frame",
+      "pred": "whole_video",
+      "p": 0.39
+    },
+    {
+      "q": "How many birds can be observed perched on the street lamp in the first half of the video?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.64
+    },
+    {
+      "q": "According to the video, which of the following events occurred in India?",
+      "gold": "clip",
+      "pred": "whole_video",
+      "p": 0.57
+    },
+    {
+      "q": "According to the video, what is the primary demand of farmers?",
+      "gold": "clip",
+      "pred": "whole_video",
+      "p": 0.44
+    },
+    {
+      "q": "According to the video, how many persons are shot to death by the player before he is dead?",
+      "gold": "whole_video",
+      "pred": "frame",
+      "p": 0.99
+    },
+    {
+      "q": "From which country does the first-place athlete in the video originate?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.81
+    },
+    {
+      "q": "What is the time difference in seconds between the second and third place in the competition results shown at the end of the video?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.8
+    },
+    {
+      "q": "What is the man in black doing while standing beside the field and in front of the Dove board?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.54
+    },
+    {
+      "q": "According to the little girl's expression, how does she feel after finishing her performance?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.94
+    },
+    {
+      "q": "What are the characteristics of the makeup in the video?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.47
+    },
+    {
+      "q": "Where did the video take place?",
+      "gold": "whole_video",
+      "pred": "frame",
+      "p": 0.72
+    },
+    {
+      "q": "What is the total number of nominations received by the movie \"Oppenheimer\"?",
+      "gold": "frame",
+      "pred": "whole_video",
+      "p": 0.74
+    },
+    {
+      "q": "What is the most likely role of the blonde woman in the video, clad in a blue T-shirt and black shorts?",
+      "gold": "clip",
+      "pred": "frame",
+      "p": 0.55
+    },
+    {
+      "q": "What camera does the protagonist in the video use to shoot?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.5
+    },
+    {
+      "q": "Where were the video clips of the mountain tour taken from among the following options?",
+      "gold": "clip",
+      "pred": "whole_video",
+      "p": 0.61
+    },
+    {
+      "q": "Which of the following features can describe Hamlet in the video?",
+      "gold": "frame",
+      "pred": "whole_video",
+      "p": 0.67
+    },
+    {
+      "q": "Which cellular structure is responsible for receiving proteins according to the video?",
+      "gold": "clip",
+      "pred": "whole_video",
+      "p": 0.93
+    },
+    {
+      "q": "Which components are part of the object described in the video?",
+      "gold": "clip",
+      "pred": "whole_video",
+      "p": 0.66
+    },
+    {
+      "q": "According to the video, how much did the central bank drop interest rates during the epidemic?",
+      "gold": "frame",
+      "pred": "clip",
+      "p": 0.85
+    }
+  ],
+  "policy": [
+    "| true \\ routed | frame | clip | whole_video |",
+    "|---|---|---|---|",
+    "| frame | 1.00 | 0.90 | 0.55 |",
+    "| clip | 0.35 | 1.00 | 0.70 |",
+    "| whole_video | 0.10 | 0.40 | 1.00 |",
+    "\ncost per route = {'frame': 1.0, 'clip': 3.0, 'whole_video': 10.0}, mu = 0.15"
+  ]
+}

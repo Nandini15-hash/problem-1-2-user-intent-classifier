@@ -1,0 +1,101 @@
+query,label,source_type
+what is this podcast episode about,whole_video,podcast
+summarize the keynote,whole_video,lecture
+give me a tldr of the meeting,whole_video,meeting
+which topics did the guests cover overall,whole_video,podcast
+list every boss fight in this playthrough in order,whole_video,gameplay
+how many goals were scored in the whole match,whole_video,sports
+is this video a tutorial or a review,whole_video,generic
+what's the overall mood of the vlog,whole_video,egocentric
+did the speaker ever mention pricing,whole_video,meeting
+which animals appear in this documentary,whole_video,wildlife
+rank the dishes by how long they took to cook,whole_video,cooking
+what is the main argument of the lecture,whole_video,lecture
+how many times does the dog bark across the footage,whole_video,surveillance
+was anything about the budget left undiscussed,whole_video,meeting
+what genre of game is this,whole_video,gameplay
+give a chapter breakdown of the documentary,whole_video,wildlife
+in what order did the bands perform,whole_video,concert
+how does the host's opinion change over the episode,whole_video,podcast
+what did the team decide by the end of the standup,whole_video,meeting
+how many different people enter the store during the day,whole_video,surveillance
+what's the storyline of this short film,whole_video,film
+which countries did the traveler visit,whole_video,egocentric
+key takeaways from the earnings call,whole_video,meeting
+how many deaths does the player have in total,whole_video,gameplay
+does the reviewer recommend the phone,whole_video,review
+what is the recurring theme in the interviews,whole_video,news
+which drills does the coach repeat most often,whole_video,sports
+was the cooking show filmed in one kitchen or several,whole_video,cooking
+how is the documentary structured,whole_video,wildlife
+which team dominated possession throughout,whole_video,sports
+what are all the products shown in the haul video,whole_video,egocentric
+give me the gist,whole_video,generic
+did anyone mention the deadline at any point,whole_video,meeting
+how many levels does the speedrunner complete,whole_video,gameplay
+what happens in the movie overall,whole_video,film
+what topics are skipped compared to the agenda,whole_video,meeting
+which songs were played during the concert,whole_video,concert
+how many birds species are filmed in total,whole_video,wildlife
+what lessons does the presenter want viewers to remember,whole_video,lecture
+tell me what this channel's video covers from start to finish,whole_video,generic
+show me when the striker scores the second goal,clip,sports
+find the part where they talk about hiring,clip,meeting
+when does the lion start chasing the zebra,clip,wildlife
+clip of the car running the red light,clip,dashcam
+how does the chef fold the dumplings,clip,cooking
+what happens right after the player opens the chest,clip,gameplay
+the moment the guitarist breaks a string,clip,concert
+why does the referee stop the game in the second half,clip,sports
+how did the speaker explain gradient descent,clip,lecture
+replay the argument between the two hosts,clip,podcast
+what did the cfo say about q3 revenue,clip,meeting
+find the segment where someone leaves a package at the door,clip,surveillance
+how does the bear catch the salmon,clip,wildlife
+when does the boss enter its second phase,clip,gameplay
+what was the reaction of the crowd after the encore,clip,concert
+show the demo of the new feature,clip,meeting
+how do I replace the bike chain step from the video,clip,tutorial
+the part where she explains why she quit her job,clip,egocentric
+what happens after the cyclist falls,clip,sports
+find the overtaking maneuver on the last lap,clip,sports
+how did the magician do the coin trick,clip,performance
+locate the section on climate policy,clip,news
+what did the guest answer when asked about ai safety,clip,podcast
+show me the knife sharpening part,clip,cooking
+when does the suspect walk past camera 3,clip,surveillance
+how did the team escape the ambush,clip,gameplay
+the scene where the kid blows out the candles,clip,egocentric
+what did the presenter demonstrate with the pendulum,clip,lecture
+why does the goalkeeper get a yellow card,clip,sports
+when do the elephants reach the waterhole,clip,wildlife
+what color is the presenter's tie,frame,news
+read the license plate of the blue suv,frame,dashcam
+what does the slide title say at 12:30,frame,lecture
+what's the score shown on the scoreboard at halftime,frame,sports
+what brand is the laptop on the desk,frame,meeting
+what is written on the whiteboard,frame,meeting
+what is the player's health bar at when the boss appears,frame,gameplay
+what jersey number does the goalkeeper wear,frame,sports
+screenshot of the final leaderboard,frame,gameplay
+what does the sign at the trail entrance say,frame,egocentric
+how many people are sitting at the table in the opening shot,frame,meeting
+what color is the parrot's beak,frame,wildlife
+what time does the clock on the wall show,frame,surveillance
+where is the fire extinguisher located in the room,frame,surveillance
+what logo is on the drummer's bass drum,frame,concert
+what's the price tag on the jacket,frame,egocentric
+what ingredients are listed on the recipe card,frame,cooking
+which weapon is the character holding in the thumbnail,frame,gameplay
+what does the lower third caption say about the guest,frame,podcast
+frame where the wanted poster is visible,frame,film
+what is the speed shown on the dashboard,frame,dashcam
+what shoes is the dancer wearing,frame,performance
+what map is shown at the start of the match,frame,gameplay
+what's the name tag on the nurse's uniform,frame,egocentric
+what is the url shown at the end card,frame,generic
+what is the temperature on the weather map,frame,news
+how many players are on the court at tip-off,frame,sports
+what kind of hat is the fisherman wearing,frame,egocentric
+what text appears on the error dialog in the screen share,frame,meeting
+what is the color of the getaway car,frame,surveillance

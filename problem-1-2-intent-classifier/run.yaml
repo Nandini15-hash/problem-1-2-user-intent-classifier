@@ -1,0 +1,22 @@
+# Fill this in before you submit -- our evaluator runs these commands
+# EXACTLY as written, in this order, from a fresh checkout of your fork.
+# Keep every command non-interactive (no prompts) and idempotent.
+
+setup_commands:
+  - "pip install -r requirements.txt"
+
+run_commands:
+  - "python src/main.py --help"
+  # fit + calibrate + compile the production router (~5 s) -> artifacts/router.npz, artifacts/router.vocab.json
+  - "python src/main.py train"
+  # full benchmark: 5 model tiers x grouped 5-fold CV x 5 repeats, out-of-domain set, latency, size (~2 min)
+  # -> prints the tables and writes artifacts/results.md + artifacts/results.json
+  - "python src/main.py evaluate"
+  # route sample queries: JSON lines with intent, calibrated probabilities, chosen route, temporal hint
+  - "python src/main.py demo"
+  - "python src/main.py predict 'what is the score shown at halftime' 'summarize the podcast' 'why did the driver swerve'"
+
+test_commands:
+  - "python -m pytest -q"
+
+notes: "CPU only, no GPU, no API keys. Python >= 3.9. Total run time about 2-3 minutes (evaluate is the slow step). Only network use: downloads qa/test.jsonl (~115 KB) from the HF dataset aintropy-ai/video-mme-sample10 (no videos); if Hugging Face is unreachable it falls back automatically to a verified copy in data/ (sha256-checked against the HF file). Our routing labels for all 270 questions are in data/videomme_intent_gold.csv. Write-up: docs/WRITEUP.md; latest numbers: artifacts/results.md."
