@@ -1,1 +1,5 @@
-Your write-up goes here -- markdown, slides, a notebook, or another format of your choosing (no more than 2 pages / 3 slides equivalent). If it's hosted elsewhere (e.g. a slides link), put the link in this file instead.
+# docs/
+
+- [WRITEUP.md](WRITEUP.md): the 2-page summary (problem framing, features, models, metric, results, deployment)
+- [labeling_guide.md](labeling_guide.md): how the 270 VideoMME questions were labelled
+- [architecture.drawio](architecture.drawio): diagram (open in draw.io)

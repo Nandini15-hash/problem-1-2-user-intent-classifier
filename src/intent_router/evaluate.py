@@ -238,9 +238,9 @@ def run(out_dir: Path = None, repeats: int = 5, quick: bool = False) -> Dict:
     ]
     report["policy"] = describe_policy(policy)
 
-    (out_dir / "results.json").write_text(json.dumps(report, indent=2))
+    (out_dir / "results.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     md = render_markdown(report)
-    (out_dir / "results.md").write_text(md)
+    (out_dir / "results.md").write_text(md, encoding="utf-8")
     print(md)
     return report
 

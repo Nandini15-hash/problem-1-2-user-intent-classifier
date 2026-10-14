@@ -86,7 +86,7 @@ class FastRouter:
             inv = sorted(b["vocab"], key=b["vocab"].get)
             meta[name] = {"vocab": inv, "ngram": list(b["ngram"])}
         np.savez_compressed(path.with_suffix(".npz"), **arrays)
-        path.with_suffix(".vocab.json").write_text(json.dumps(meta, ensure_ascii=False))
+        path.with_suffix(".vocab.json").write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
 
     @classmethod
     def load(cls, path: Path) -> "FastRouter":
